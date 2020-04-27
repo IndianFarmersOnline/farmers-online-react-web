@@ -4,3 +4,4 @@ scripts/*
 node_modules/*
 serviceWorker.js
 public/*
+src/ui/components/*
