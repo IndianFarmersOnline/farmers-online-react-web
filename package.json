@@ -69,7 +69,8 @@
     "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "lint": "eslint . --ext .js --ext .jsx -f node_modules/eslint-html-reporter/reporter.js -o eslint-report.html"
   },
   "eslintConfig": {
     "extends": "react-app"
