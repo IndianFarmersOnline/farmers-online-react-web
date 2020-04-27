@@ -20,3 +20,4 @@ const style = (theme) => ({
 });
 
 export default style;
+// Style copied from material-ui website.

@@ -16,6 +16,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import style from './styles';
 
+// Note: Component copied from material UI samples.
+
 const Copyright = () => (
 	<Typography align="center" color="textSecondary" variant="body2">
 		{'Copyright © '}
