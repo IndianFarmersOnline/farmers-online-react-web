@@ -8,6 +8,7 @@ import {
 	StepLabel,
 	Stepper,
 	Typography,
+	withStyles,
 } from '@material-ui/core';
 import brandImage from '../../assets/images/brand.png';
 import Button from '../Button';
@@ -22,7 +23,6 @@ import SearchableDropdown from '../SearchableDropdown';
 import StatesJson from '../../../data/states.json';
 import styles from './styles';
 import TextBox from '../TextBox';
-import withStyles from '@material-ui/styles/withStyles';
 
 const getSteps = () => [
 	'Personal',
