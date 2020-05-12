@@ -2,7 +2,7 @@ import * as serviceWorker from './ui/serviceWorker';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { SignUp } from './ui/components';
+import Route from './route';
 import theme from './ui/theme/index';
 import { ThemeProvider } from '@material-ui/core/styles';
 
@@ -11,7 +11,7 @@ ReactDOM.render(
 		<ThemeProvider theme={theme}>
 			{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 			<CssBaseline />
-			<SignUp />
+			<Route />
 		</ThemeProvider>
 	</React.StrictMode>,
 	document.getElementById('root'),

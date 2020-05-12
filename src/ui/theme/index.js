@@ -1,14 +1,16 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { unstable_createMuiStrictModeTheme as createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import blue from '@material-ui/core/colors/blue';
+import grey from '@material-ui/core/colors/grey';
+import red from '@material-ui/core/colors/red';
 
 const theme = createMuiTheme({
 	palette: {
 		background: {
-			default: '#fafafa',
+			default: '#fff',
 			paper: '#fff',
 		},
-		common: {
-			black: '#000',
-			white: '#fff',
+		colors: {
+			grey,
 		},
 		error: {
 			contrastText: '#fff',
@@ -17,39 +19,37 @@ const theme = createMuiTheme({
 			main: '#f44336',
 		},
 		primary: {
+			color: blue,
 			contrastText: '#fff',
-			dark: '#303f9f',
-			light: '#7986cb',
-			main: 'rgba(48, 63, 159, 1)',
+			dark: blue[900],
+			light: blue[700],
+			main: blue[800],
 		},
 		secondary: {
+			color: red,
 			contrastText: '#fff',
-			dark: '#c51162',
-			light: '#ff4081',
-			main: 'rgba(245, 0, 87, 1)',
+			dark: red[700],
+			light: red[500],
+			main: red[600],
 		},
 		text: {
-			disabled: 'rgba(0, 0, 0, 0.38)',
-			hint: 'rgba(0, 0, 0, 0.38)',
-			primary: 'rgba(0, 0, 0, 0.87)',
-			secondary: 'rgba(0, 0, 0, 0.54)',
+			disabled: 'rgba(155, 155, 155, 1)',
+			hint: 'rgba(74, 144, 226, 1)',
+			primary: 'rgba(117, 117, 117, 1)',
+			secondary: 'rgba(0, 0, 0, 1)',
 		},
-		typography: {
-			fontFamily: [
-				'-apple-system',
-				'BlinkMacSystemFont',
-				'"Segoe UI"',
-				'Roboto',
-				'"Helvetica Neue"',
-				'Arial',
-				'sans-serif',
-				'"Apple Color Emoji"',
-				'"Segoe UI Emoji"',
-				'"Segoe UI Symbol"',
-			].join(','),
-			// Tell Material-UI what's the font-size on the html element is.
-			htmlFontSize: 10, // font-size: 62.5%; /* 62.5% of 16px = 10px */
-		},
+		// type: 'dark',
+	},
+	typography: {
+		fontFamily: [
+			'Open Sans',
+			'"Segoe UI"',
+			'Roboto',
+			'"Helvetica Neue"',
+			'Arial',
+		].join(','),
+		// Tell Material-UI what's the font-size on the html element is.
+		htmlFontSize: 10, // font-size: 62.5%; /* 62.5% of 16px = 10px */
 	},
 });
 

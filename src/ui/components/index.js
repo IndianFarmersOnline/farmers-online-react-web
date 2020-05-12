@@ -1,1 +1,13 @@
-export { default as SignUp } from './sign_up';
+export { default as AuthLayout } from './layouts/AuthLayout';
+export { default as Button } from './Button';
+export { default as Footer } from './Footer';
+export { default as Home } from './Home';
+export { default as IconButton } from './IconButton';
+export { default as MainLayout } from './layouts/MainLayout';
+export { default as Navbar } from './Navbar';
+export { default as NavbarMenu } from './NavbarMenu';
+export { default as Register } from './Register';
+export { default as Privacy } from './Privacy';
+export { default as Login } from './Login';
+export { default as Testing } from './Testing';
+export * from './Icons';
